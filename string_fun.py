@@ -1,4 +1,4 @@
-name = "john jacob jingleheimer smith"
+name = "john jacob jingleheimer schmidt"
 
 # put your Python code here:
 
