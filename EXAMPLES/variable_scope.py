@@ -1,6 +1,10 @@
 
-x = 5
+x = 5   # global variable (file scope)
 
+# local -> nonlocal -> global -> builtin
+
+# def print(...):
+#     pass
 
 def spam():
     x = 22  # Local variable; does not modify global x
@@ -11,7 +15,7 @@ def spam():
 
 def eggs():
     print("eggs(): x is", x)  # Uses global x since there is no local x
-    y = "wolverine"
+    y = "marmoset"
     print("eggs(): y is", y)
 
 

@@ -16,7 +16,7 @@ while True:
     if expr.lower() == 'q':
         break
 
-    v1, op, v2 = expr.split()
+    v1, op, v2 = expr.split()  #  '5 + 3'   '10 * 9.8'
     v1 = float(v1)
     v2 = float(v2)
 

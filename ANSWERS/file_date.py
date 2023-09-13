@@ -1,9 +1,9 @@
 import sys
 import os
-from datetime import datetime as DateTime
+from datetime import datetime
 
 for filename in sys.argv[1:]:
     mtime = os.path.getmtime(filename)
-    file_date = DateTime.fromtimestamp(mtime)
-    fmt_date = DateTime.strftime(file_date,'%b %d, %Y')
-    print("{0:15s} {1}".format(filename, fmt_date))
+    file_date = datetime.fromtimestamp(mtime)
+    fmt_date = file_date.strftime('%b %d, %Y')
+    print(f"{filename:15s} {fmt_date}")
