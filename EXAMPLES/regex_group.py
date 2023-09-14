@@ -22,3 +22,6 @@ print()
 
 matches = re.findall(pattern, s)  # findall() returns list of tuples containing groups
 print("matches:", matches)
+
+#  r"(?:Schenectady|Mckeesport) Lab"
+

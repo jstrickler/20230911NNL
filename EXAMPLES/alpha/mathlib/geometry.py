@@ -39,3 +39,11 @@ def square_area(side):
     :return: Area of square
     """
     return side ** 2
+
+def get_module_name():
+    return __name__
+
+if __name__ == "__main__":   # if this script is run directly, not imported        
+    print(square_area(42))
+    print("HELLO HELLO HELLO")
+    print("Module name:", get_module_name())

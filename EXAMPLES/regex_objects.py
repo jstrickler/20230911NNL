@@ -20,7 +20,7 @@ if m:
     print("Found:", m.group())
 print()
 
-for m in rx_code.finditer(s):
+for m in rx_code.finditer(s):  # instead of re.finditer(pat, s)
     print(m.group())
 print()
 
